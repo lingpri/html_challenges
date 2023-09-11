@@ -3,24 +3,20 @@
 
 
 html,body {
-
     margin: 0;
     padding: 0;
-   font-family: 'Nunito';
+    font-family: 'Nunito';
 }
-
-header {
-    background-color: #75756e;
-    color: blanchedalmond;
-    text-align: center;
-    padding: 10px 0;
-    margin: 0 0 25px 0;
-  }
 
 body {
-    background: #EBF1F3;
+    background: #eeeeee;
     height: 100vh;
 }
+
+.container {
+    padding: 2em;
+}
+
 .book-container {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -32,39 +28,31 @@ body {
     padding: 1em 1em 0;
 }
 
-span {
-    width: 40px;
-    height: 50px;
-    display: block;
-    border-radius: 50%;
+
+h1 {
+    font-size: 1.2em;
+    margin: .3em 0;
+}
+p.subheading {
+    margin-top: 0;
+    margin-bottom: 2em;
 }
 
-.container {
-    padding: 2em;
-    height: 1070px;
-    width: auto;
+p.author {
+    font-size: .8em;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: .8em;
 }
-
 p.desc {
     margin-bottom: 0;
     background: #DAE7EB;
     margin: 1em -1em 0;
     padding: 1em;
+    line-height: 2em;
 }
 
-p.title {
-    font-size: 1.5em;
-    margin-bottom: 0;
-    margin-top: .8em;
-}
-
-h1 {
-    font-size: 1.2em;
-    margin-left: 30px;
-}
-
-p.subheading {
-
-    padding-left: 2em;
+span {
+    font-size: 3em;
 }
 
