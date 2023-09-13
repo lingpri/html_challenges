@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+        
+    font-family: 'Nunito';
+}
+
+h1 {
+    margin-left: 1em;
+}
+
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    grid-gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin: 55px;
+ 
+}
+
+.book {
+    border: 1px solid #B8C8CE;
+    margin-left: 1.8em;
+    
+}
+
+p.author {
+    font-size: .8em;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: .8em;
+}
+
+p.desc {
+    margin-bottom: 0;
+    background: #DAE7EB;
+    padding: 1em;
+    line-height: 2em;
+    
+}
+
+
+
+.svg {
+    margin-bottom: 0;
+}
+
+
+
+
+
