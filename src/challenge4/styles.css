@@ -31,6 +31,8 @@ h1 {
     
 }
 
+
+
 p.author {
     font-size: .8em;
     font-weight: bold;
@@ -43,10 +45,7 @@ p.desc {
     background: #DAE7EB;
     padding: 1em;
     line-height: 2em;
-    
 }
-
-
 
 .svg {
     margin-bottom: 0;

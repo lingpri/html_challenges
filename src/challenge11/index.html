@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherlock Arrays</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Nunito+Sans:opsz@6..12&display=swap');
+
+        body {
+            background-color: gray;
+            font-family: 'Mooli', sans-serif;
+
+        }
+
+        .card {
+            display: block;
+            grid-template-columns: repeat(1, auto);
+        }
+
+        .gratitude {
+            line-height: 2.3em;
+            background-color: whitesmoke;
+            padding: 2em 2em 2em 2em;
+
+
+        }
+
+        pre {
+            background-color: whitesmoke;
+
+        }
+
+        .footer {
+            padding: 1rem 0 3rem 0;
+            text-align: center;
+            font-size: 0.8rem;
+            border-top: 1px solid #A61F11;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        li {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Author:Priya Rammohan</h3>
+    <h4>Sep 28, 2023</h4>
+
+    <div class="card">
+        <p class="gratitude">
+            Air is again thankful for the community we live in. Thanks to the beautiful cotton night dress from India.
+            They cropped it to their size with good scissors
+            and could wear it without tripping on them. There is always something that spills to the next day. A book we
+            couldn't read or understand.
+            The extra mile we could have gone for a walk by stepping outside. An approximate height of forty-seven
+            inches is an excellent height to crop for a night dress.
+            They had tried finding the sum of the left and the right array to see if they were balanced. Hope some folks
+            will leap into Haskell to know why the number of lines of code is less here.
+            We will add to the left sum variable with index i-1 and subtract the current element from the right for the
+            valid sum variable.
+            The corner case for zero compares the left and right sum to return yes. We use a range of functions to step
+            until the array's length to compute the sum.
+            The initial right sum is calculated by using the sum function in Python sum(arr[1:]).A good problem to work
+            on for the high school students.
+        </p>
+<pre>
+<code>
+  left  = 0 
+  right = sum(arr[1:]) 
+  for i in range(len(arr)):  
+    left  += arr[i-1] 
+    right -= arr[i] 
+    if (left == right): 
+        return "YES" 
+  return "NO" 
+</code>            
+</pre>
+
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/gioronpri/"><img
+                        src="https://icons.iconarchive.com/icons/designbolts/free-hand-stitch-social/32/Active-LinkedIn-icon.png"
+                        width="32" height="32" alt="LinkedIn"></a></li>
+            <li><a href="https://github.com/lingpri">
+                    <img src="https://icons.iconarchive.com/icons/danleech/simple/32/github-icon.png" width="32"
+                        height="32" alt="Github">
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>Sugar Land, TX - 77479</li>
+        </ul>
+        <ul>
+            <li>Ph:904-302-3113</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

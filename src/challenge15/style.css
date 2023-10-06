@@ -1,0 +1,68 @@
+
+ 
+
+ body {
+    margin: 0;
+    padding: 0;
+ }
+
+ .wrapper {
+    display: flex;
+    flex-direction: row;
+    
+    
+  }
+
+  
+  .left {
+    background-color: rgba(212, 212, 215, 1);
+    
+  }
+
+  .left > h2 {
+    margin: 2em 2em;
+    font-family: Dejavu Sans;
+    font-size: 20px;
+    
+  }
+  .left > h4 {
+    margin-left: 2.3em;
+  }
+
+  .left > h6 {
+    margin-bottom: 1px;
+    font-size: 12px;
+    margin-left: 3em;
+  }
+
+  
+  
+
+  .line {
+    border: 1px solid whitesmoke;
+    margin: 3px;
+    display:inline-block;
+    width: 98%;
+  }
+
+  img {
+
+    margin-left: 2em;
+    margin-top: 0.7em;
+  }
+
+  .right {
+    margin-left: 10px;
+    background-color: antiquewhite;
+  }
+
+  .box {
+    display: flex;
+  }
+
+  .right > h5 {
+    margin-top: 2em;
+    font-size: 12px;
+  }
+
+  
