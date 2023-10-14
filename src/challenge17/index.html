@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Season 1</title>
+    <style>
+        /* No CSS to write in this step! Below is the CSS you wrote for the styleguide. */
+
+        @layer base {
+            :root {
+                /* colors */
+                --white: #ffffff;
+                --green: #333d29;
+                --coffee: #43281c;
+                --vanilla: #f1e3d3;
+                --lemon: #fbf2c0;
+                --mocha: #7f4f24;
+                --tan: #ddb892;
+                --blue: #3e80b6;
+
+                /* fonts */
+                --decorative: "Montserrat", sans-serif;
+                --sans: "Open Sans", sans-serif;
+
+                /* font scale */
+                --base-size: 1.2rem;
+                --scale: 1.25;
+                --xl: calc(var(--h1) * var(--scale) * var(--scale));
+                /* 7.15rem */
+                --lg: calc(var(--h1) * var(--scale));
+                /* 4.575rem */
+                --h1: calc(var(--h2) * var(--scale));
+                /* 3.66rem */
+                --h2: calc(var(--h3) * var(--scale));
+                /* 2.93rem */
+                --h3: calc(var(--h4) * var(--scale));
+                /* 2.34rem */
+                --h4: calc(var(--h5) * var(--scale));
+                /* 1.875rem */
+                --h5: calc(var(--h6) * var(--scale));
+                /* 1.5rem */
+                --h6: var(--base-size);
+                /* 1.2rem */
+                --small: calc(var(--base-size) / var(--scale));
+                /* 0.96rem */
+
+                /* other variables */
+                --radius: 5px;
+            }
+
+            /* add border box sizing to the page right from the start */
+            html {
+                box-sizing: border-box;
+            }
+
+            *,
+            *:before,
+            *:after {
+                box-sizing: inherit;
+            }
+
+            body {
+                font-family: var(--sans);
+                line-height: 1.5;
+                background-color: var(--vanilla);
+                color: var(--coffee);
+                font-size: var(--base-size);
+                padding: 0;
+                margin: 0;
+            }
+
+            h1,
+            h2,
+            h3,
+            .h1,
+            .h2,
+            .h3 {
+                font-weight: 400;
+                font-family: var(--decorative);
+                margin: 0;
+            }
+
+            h1,
+            .h1 {
+                font-size: var(--h1);
+                line-height: 1;
+                margin-bottom: var(--h2);
+            }
+
+            h2,
+            .h2 {
+                font-size: var(--h2);
+                line-height: 1.1;
+                margin-bottom: var(--h3);
+            }
+
+            h3,
+            .h3 {
+                font-size: var(--h3);
+                line-height: 1.2;
+                margin-bottom: var(--h4);
+                margin-left: var(--h4);
+            }
+
+            h5,
+            .h5 {
+                font-size: var(--h5);
+                line-height: 1.2;
+                margin-bottom: var(--h5);
+                margin-left: var(--h5);
+            }
+
+            img {
+                max-width: 100%;
+                border-radius: var(--radius);
+                
+            }
+
+            figure {
+                margin: 0;
+                padding-left: var(--h4);
+            }
+
+            a {
+                color: var(--green);
+            }
+
+            a:hover {
+                text-decoration: none;
+            }
+
+            header {
+                background-color: var(--coffee);
+                border-bottom: 20px double var(--tan);
+                padding-top: 1rem;
+            }
+
+            header h1 {
+                color: var(--vanilla);
+                text-align: center;
+            }
+
+            /* h/t https://shannonpayne.com.au/how-to-create-a-low-highlight-text-effect-using-css/ */
+            .fancy-text {
+                background: linear-gradient(135deg, var(--mocha) 0%, var(--tan) 100%);
+                background-repeat: no-repeat;
+                background-size: 100% 35%;
+                background-position: 0 90%;
+            }
+
+            /* color boxes */
+            .colors > * {
+                width: 5rem;
+                height: 4rem;
+                display: inline-block;
+                text-align: center;
+                padding: 1rem 0;
+                margin: 1rem;
+            }
+
+            .white {
+                background-color: var(--white);
+            }
+
+            .green {
+                background-color: var(--green);
+                color: var(--vanilla);
+            }
+
+            .coffee {
+                background-color: var(--coffee);
+                color: var(--vanilla);
+            }
+
+            .vanilla {
+                background-color: var(--vanilla);
+                border: 2px solid var(--coffee);
+            }
+
+            .lemon {
+                background-color: var(--lemon);
+                color: var(--coffee);
+            }
+
+            .mocha {
+                background-color: var(--mocha);
+                color: var(--vanilla);
+            }
+
+            .tan {
+                background-color: var(--tan);
+                color: var(--coffee);
+            }
+
+            .blue {
+                background-color: var(--blue);
+                color: var(--vanilla);
+            }
+
+            p{
+                margin-left: var(--h4);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><span class="fancy-text">Volleyball</span>@ Telfair</h1>
+    </header>
+
+    <!-- color boxes (eventually) -->
+    <div class="colors">
+        <div class="white">ram</div>
+        <div class="green">hector</div>
+        <div class="coffee">vasu</div>
+        <div class="vanilla">mithun</div>
+        <div class="lemon">prakash</div>
+        <div class="mocha">hakkim</div>
+
+        <div>vs</div>
+        <div class="tan">roy</div>
+        <div class="blue">srikanth</div>
+    </div>
+
+
+
+    <article>
+        <div>
+            <h3>Telfair Spikers vs Seven Lions</h3>
+            <h5>October 14 2023</h5>
+            <p>Air had no intention of congratulating anyone, but she felt obligated to maintain appearances in the face of aggressive competitors. The Telfair Spikers secured a victory, celebrating with roars of joy.
+
+                The game day's routine consisted of walking their pet meerkat, savoring cherry lime broiled tomatoes, lentil batter crepes with foamy coconut chilli relish, enjoying restful sleep, clocking the deliverables at work and washing dishes, just like a serene Buddha.
+                
+                After completing a psychometric quiz with a purring giraffe in the back seat, the narrator drove to the Novel Square Museum District wearing a Jasper Banff Canadian T-shirt adorned with coffee stains. She parked her car in the dark, made her way to a pavilion seat, and noticed the letters "1939" written on the building.
+                
+                There was palpable nervousness among the players as the game neared its end, with their neighbors and spouses watching. They lost their much-needed rhythm.Checkout the game <a
+                    href="https://youtu.be/RjTpa0GmKxw">here.</a> After shaking hands with a few players who would typically be unwilling to converse with strangers, they drove back home, prepared lunch, baked frozen food for a side dish, 
+                    and went to sleep. It's important to note that the game hasn't lost its shine due to the absence of tickets, security guards, or cheerleaders. 
+                    Seven lions struggled to focus and execute dramatic plays, which ultimately led to their second-place finish.</p>
+            <figure>
+                <img src="https://volpic.s3.us-east-2.amazonaws.com/volleyball_finals.jpg" />
+                <figcaption>silver smiles</figcaption>
+            </figure>
+        </div>
+        <p>
+            In the high-octane realm of volleyball, two teams set the court ablaze with their fierce battle for victory.
+            Picture this: a symphony of perfectly timed spikes, gravity-defying digs, and stunning serves that keep the
+            spectators on the edge of their seats. On one side, we have the "seven lions," renowned for their
+            lightning-fast reflexes and formidable serving skills that never cease to amaze. Their exhilarating energy
+            is only matched by their uncanny ability to strategize and outmaneuver their opponents. Opposing them, we find the 'Telfair Spikers,' a team built on power and precision. Each player possesses the uncanny ability to spike the ball with a thunderous force that would leave even the most seasoned defenders trembling, with a few exceptions, of course.
+            Supported by their unrivaled teamwork and outstanding communication, they are ready to throw their might
+            into the fierce tussle that unfolds on the volleyball court. With every move, spectators have gone breathless 
+            and clamoring for more in this thrilling volleyball game.
+        </p>
+    </article>
+
+</body>
+
+</html>
