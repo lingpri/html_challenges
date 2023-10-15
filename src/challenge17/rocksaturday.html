@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @layer base {
+            :root {
+                /* colors */
+                --white: #ffffff;
+                --green: #333d29;
+                --coffee: #43281c;
+                --vanilla: #f1e3d3;
+                --lemon: #fbf2c0;
+                --mocha: #7f4f24;
+                --tan: #ddb892;
+                --blue: #3e80b6;
+
+                /* fonts */
+                --decorative: "Montserrat", sans-serif;
+                --sans: "Open Sans", sans-serif;
+
+                /* font scale */
+                --base-size: 1.2rem;
+                --scale: 1.25;
+                --xl: calc(var(--h1) * var(--scale) * var(--scale));
+                /* 7.15rem */
+                --lg: calc(var(--h1) * var(--scale));
+                /* 4.575rem */
+                --h1: calc(var(--h2) * var(--scale));
+                /* 3.66rem */
+                --h2: calc(var(--h3) * var(--scale));
+                /* 2.93rem */
+                --h3: calc(var(--h4) * var(--scale));
+                /* 2.34rem */
+                --h4: calc(var(--h5) * var(--scale));
+                /* 1.875rem */
+                --h5: calc(var(--h6) * var(--scale));
+                /* 1.5rem */
+                --h6: var(--base-size);
+                /* 1.2rem */
+                --small: calc(var(--base-size) / var(--scale));
+                /* 0.96rem */
+
+                /* other variables */
+                --radius: 5px;
+            }
+
+            /* add border box sizing to the page right from the start */
+            html {
+                box-sizing: border-box;
+            }
+
+            *,
+            *:before,
+            *:after {
+                box-sizing: inherit;
+            }
+
+
+            header {
+                background-color: var(--coffee);
+                border-bottom: 20px double var(--tan);
+                padding-top: 1rem;
+            }
+
+            header h1,
+            h5 {
+                color: var(--vanilla);
+                text-align: center;
+            }
+        }
+
+
+        #bff-img {
+            max-width: 100%
+        }
+
+        .grid {
+            grid-template-areas:
+                'avatar'
+                'volley volley';
+        }
+
+        .user-profile__volley {
+            grid-area: volley;
+            border: 4px solid #EFB0C9;
+            padding-left: 2em;
+            padding-top: 2em;
+        }
+
+        .user-profile__avatar {
+            grid-area: avatar;
+            border: 4px solid #EFB0C9;
+            padding-left: 2em;
+            padding-top: 2em;
+        }
+
+        .user-profile__bio {
+            grid-area: bio;
+        }
+
+        @media (max-width: 700px) {
+            .grid {
+                grid-template-areas:
+                    'volley'
+                    'avatar'
+                    'volley';
+            }
+            iframe {
+                max-width: 100% !important;
+                width: auto !important;
+                height: auto !important;
+            }
+        }
+
+        @media (min-width: 700px) {
+            .user-profile {
+                display: block;
+                grid-gap: 20px;
+                margin-top: 2em;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><span class="fancy-text">Homecoming</span> & Fall Festival</h1>
+        <h5>October 15 2023</h5>
+    </header>
+
+    <div class="user-profile">
+
+
+
+        <div class="user-profile__volley">
+            <iframe width="600" height="450" src="https://www.youtube.com/embed/TLs3Lo9_lWA?si=l2X6RoY_ctJZDgVv"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <p>So, picture this: an awards ceremony for volleyball, where the atmosphere is light and relaxed. Among the
+                crowd, there are three individuals who stand out, showcasing their remarkable talent and dedication.
+                Vasu, Ram, and Hakkim step onto the stage, their faces beaming with pride, as they receive their
+                well-deserved silver medals in the fall festival. Their journey has been a rollercoaster of ups and
+                downs, countless hours of practice, and unwavering teamwork. But in that moment, all the hard work seems
+                worth it, as their achievements are recognized by the cheering audience. The silver medals draped around
+                their necks symbolize not only their exceptional skills, but also the bond they developed as a team. And
+                as they step off the stage, a sense of accomplishment fills the air, encouraging them to chase after
+                more victories in the future.</p>
+        </div>
+
+        <div class="user-profile__avatar">
+            <img src="https://volpic.s3.us-east-2.amazonaws.com/akshara.jpg" id="bff-img" />
+            <p>Homecoming at high school is an exciting and cherished annual tradition that brings together students,
+                alumni, and the community in a celebration of school spirit and unity. Amidst the lively festivities and
+                electrifying football game, volunteer opportunities offer a unique and rewarding way for students to
+                give back to their community. One noteworthy initiative is the volunteering at the railway museum, today
+                akshara had the oppurtunity to engage in educational activities and preserve the rich history of the
+                railway system. This opportunity not only instills a sense of pride and responsibility within the
+                students but also allows them to showcase their dedication and professionalism to their peers. By
+                contributing their time and skills, students actively contribute to the success and vibrancy of the
+                homecoming experience, creating cherished memories that will last a lifetime.</p>
+        </div>
+
+        <div class="user-profile__volley">
+            <iframe max-width="100%" width="600" height="450" src="https://www.youtube.com/embed/EVkmkqphGT8?si=UwASHBhGX7k6HWE7"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <p>Music is like a calming breeze that sweeps through our souls, and when it comes to rock music, the
+                serenity it brings is no exception. With its energetic beats and raw emotions, rock music has the
+                incredible power to transport us to a world where nothing else matters but the groovy melody and
+                pounding rhythm. Whether it's the soothing strum of an acoustic guitar or the electrifying roar of an
+                electric one, rock music effortlessly embraces our senses and beckons us to let go of our worries, if
+                only for a moment. So kick back, relax, and let the waves of rock music wash over you, carrying you to a
+                place where tranquility meets the intensity of a roaring crowd.</p>
+        </div>
+
+
+
+    </div>
+    <footer>
+
+            <p>copyright
+            <a href="https://www.linkedin.com/in/gioronpri/">
+                <img src="https://icons.iconarchive.com/icons/designbolts/free-hand-stitch-social/32/Active-LinkedIn-icon.png"
+                    width="32" height="32" alt="LinkedIn"></a>
+            <a href="https://github.com/lingpri"><img
+                    src="https://icons.iconarchive.com/icons/danleech/simple/32/github-icon.png" width="32" height="32"
+                    alt="Github"></a>
+            </p>
+            
+    </footer>
+</body>
+
+</html>
