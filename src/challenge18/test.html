@@ -82,6 +82,9 @@
                     1.2em Helvetica,
                     arial,
                     sans-serif;
+                    min-height: 100vh;
+                    display: flex;
+                    flex-direction: column;
             }
 
             a:link,
@@ -123,6 +126,22 @@
             .listing .body {
                 padding: 10px;
             }
+
+            footer {
+                margin-top: auto;
+                text-align: center;
+                
+            }
+
+            footer>ul {
+                   margin: 0;
+                   padding: 0;
+                   list-style-type: none;
+            }
+
+            footer > ul >li {
+                display: inline-block;
+            }
     </style>
 
 </head>
@@ -136,20 +155,18 @@
         <li>
             <h2>Item One</h2>
             <div class="body">
-                <img src="homecoming.jpeg" />
+                <img src="https://volpic.s3.us-east-2.amazonaws.com/homecoming.jpeg" />
             </div>
             <div class="cta">
-                <img src="kolam.jpg" />
+                <img src="https://volpic.s3.us-east-2.amazonaws.com/kolam.jpg" />
             </div>
         </li>
         <li>
             <h2>Item Two</h2>
             <div class="body">
-                <img src="edited.jpeg" />
+                <img src="https://volpic.s3.us-east-2.amazonaws.com/edited.jpeg" />
             </div>
-            <div class="cta">
-                <a href="">Call to action!</a>
-            </div>
+            
         </li>
         <li class="wide">
             <h2>Item Three</h2>
@@ -161,7 +178,7 @@
                 <p>inspired by <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Realizing_common_layouts_using_grids">Mozilla</a></p>
             </div>
             <div class="cta">
-                <img src="festival.jpg" />
+                <img src="https://volpic.s3.us-east-2.amazonaws.com/festival.jpg" />
             </div>
         </li>
         <li>
@@ -192,16 +209,26 @@
                 <a href="https://soundcloud.com/lucky-gal-836014279/yean-endra-kelvi-hd-song?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Listen here</a>
             </div>
         </li>
-        <li>
-            <h2>Item Five</h2>
-            <div class="body">
-                <img src="https://volpic.s3.us-east-2.amazonaws.com/nilla3.gif" />
-            </div>
-            <div class="cta">
-                <img src="https://volpic.s3.us-east-2.amazonaws.com/kanna.png" />
-            </div>
-        </li>
+        
     </ul>
+
+    <footer>
+        <p>Priya Rammohan</p>
+        <p>copyright content, all rights reserved</p>
+        <ul>
+           <li><a href="https://www.linkedin.com/in/gioronpri/">
+            <img src="https://icons.iconarchive.com/icons/designbolts/free-hand-stitch-social/32/Active-LinkedIn-icon.png"
+                    width="32" height="32" alt="LinkedIn"></a></li>
+            <li><a href="https://github.com/lingpri"><img
+                    src="https://icons.iconarchive.com/icons/danleech/simple/32/github-icon.png" width="32"
+                    height="32" alt="Github"></a></li>
+        </ul>
+        
+    </footer>
+
+
 </body>
+
+
 
 </html>
