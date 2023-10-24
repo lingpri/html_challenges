@@ -75,9 +75,11 @@ body {
     font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
     line-height: var(--bs-body-line-height);
-    margin: 0;
     text-align: var(--bs-body-text-align)
 }
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+
 
 
 .navbar {
@@ -154,6 +156,23 @@ h6 {
     text-decoration: none;
 }
 
+.sbutton:hover {
+
+    transform: translate(-0.25rem,-0.25rem);
+    box-shadow: .25rem .25rem 0rem rgb(0 0 0);
+
+}
+ .sbutton {
+	
+	font-size: 1rem;
+	line-height: 1.5rem;
+	padding: .75rem 1rem;
+	border: solid .0625rem rgb( 0 0 0/1);
+	font-family: inherit;
+	cursor: pointer;
+     
+}
+
 .button a {
     color: #fff;
     padding: 3px 8px;
@@ -180,7 +199,6 @@ h6 {
 
 .lesson-links a {
     align-items: center;
-    background: #224159;
     border-radius: 10px;
     color: #fff;
     display: inline-block;
@@ -192,6 +210,7 @@ h6 {
 
 .prev {
     float: left;
+    
 }
 
 .next {
@@ -207,6 +226,23 @@ h6 {
     padding: 20px;
     position: relative;
 }
+
+
+
+@media (max-width: 600px) {
+    .lesson-container {
+      font-size: x-small;
+      max-width: 100%
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
+
+    h1 {
+        font-size: small;
+    }
+  }
 
 .lesson {
     border-radius: 8px;
