@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            /* Horizontal layout */
+            position: relative;
+        }
+
+        .image {
+            flex: 1;
+            /* Takes up half of the container's width on desktop */
+
+        }
+
+        .text {
+            flex: 1;
+            /* Takes up half of the container's width on desktop */
+            position: relative;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent background for text */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            /* Text color */
+            padding: 20px;
+            /* Add padding for better readability */
+        }
+
+        /* Media query to change layout on mobile */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                /* Switch to a vertical layout on mobile */
+            }
+
+            .image,
+            .text {
+                flex: auto;
+                /* Each element takes full width on mobile */
+            }
+        }
+
+
+
+
+        /* Media query to change layout on mobile */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .image,
+            .text {
+                flex: auto;
+            }
+
+            .text-overlay {
+                position: static;
+                /* Remove absolute positioning on mobile */
+                background: none;
+                /* Remove background on mobile */
+                color: #000;
+                /* Adjust text color for better readability */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="https://volpic.s3.us-east-2.amazonaws.com/guru.jpg" alt="Image">
+        </div>
+        <div class="text">
+            <div class="text-overlay">
+                <h1><q>I thought we weren’t going to talk about Linear Gradient</q></h1>
+            </div>    
+        </div>
+    </div>
+
+</body>
+
+</html>
